@@ -1,0 +1,25 @@
+.topbar{background:var(--yellow);color:var(--night);text-align:center;font-size:13px;font-weight:800;padding:5px 10px}
+.header{position:sticky;top:0;z-index:20;background:var(--night)}
+.header-in{display:flex;align-items:center;justify-content:space-between;height:92px}
+.logo img{display:block;height:58px;width:auto;max-width:62vw}
+.nav{display:flex;align-items:center;gap:24px}.nav a{text-decoration:none;font-size:15px;font-weight:800;color:#fff}
+.nav a:not(.btn):hover{color:var(--yellow)}
+.nav .btn{border-color:#fff;box-shadow:0 3px 0 rgba(255,255,255,.35)}
+.menu-btn{display:none;border:3px solid #fff;background:transparent;color:#fff;border-radius:999px;padding:6px 16px;font:800 14px var(--font-b);cursor:pointer}
+.wa-float{position:fixed;right:18px;bottom:18px;background:#25d366;color:#053b14;font-weight:800;font-size:14px;padding:14px 20px;border-radius:999px;border:3px solid #053b14;text-decoration:none;box-shadow:0 4px 0 #053b14;z-index:30}
+@media(max-width:860px){
+.menu-btn{display:block}
+.nav{display:none;position:absolute;left:0;right:0;top:100%;background:var(--night2);flex-direction:column;align-items:stretch;padding:18px 20px;gap:14px}
+body.nav-open .nav{display:flex}}
+/* submenus */
+.has-sub{position:relative;display:flex;align-items:center;gap:2px;padding:26px 0}
+.sub-btn{background:none;border:0;color:#fff;font-size:15px;cursor:pointer;padding:0 4px}
+.sub{display:none;position:absolute;top:calc(100% - 12px);left:-16px;min-width:270px;background:#fff;border:3px solid var(--night);border-radius:22px;padding:10px;box-shadow:0 6px 0 var(--night);z-index:40}
+.sub a{display:block;color:var(--ink)!important;padding:8px 14px;border-radius:12px;font-size:14.5px}
+.sub a:hover{background:#f3e6fb;color:var(--purple)!important}
+.has-sub:hover .sub,.has-sub:focus-within .sub,.has-sub.open .sub{display:block}
+@media(max-width:860px){
+.has-sub{flex-wrap:wrap;padding:0;justify-content:space-between}
+.sub{position:static;display:none;width:100%;box-shadow:none;border:0;background:rgba(255,255,255,.08);padding:6px;margin-top:6px}
+.sub a{color:#fff!important}.sub a:hover{background:rgba(255,255,255,.15);color:#fff!important}
+.has-sub:hover .sub,.has-sub:focus-within .sub{display:none}.has-sub.open .sub{display:block}}

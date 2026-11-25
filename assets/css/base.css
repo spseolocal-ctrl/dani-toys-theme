@@ -1,0 +1,22 @@
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--font-b);color:var(--ink);background:#fff;line-height:1.65;font-size:16px}
+a{color:inherit}img{max-width:100%;height:auto}
+h1,h2,h3,h4{font-family:var(--font-h);color:var(--purple)}
+h1{font-size:clamp(34px,5.2vw,58px);line-height:1.05;font-weight:700;margin:0 0 18px}
+h2{font-size:clamp(26px,3.4vw,38px);line-height:1.12;font-weight:700;margin:0 0 24px;text-align:center}
+.narrow h2,.prod h2{text-align:left}
+h3{font-size:21px;margin:0 0 8px;line-height:1.2;font-weight:600}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.lead{font-size:18px;max-width:560px}
+.eyebrow{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;background:var(--yellow);color:var(--night);padding:5px 14px;border-radius:999px;margin-bottom:16px}
+.eyebrow.c{display:block;width:max-content;margin:0 auto 14px}
+.btn{display:inline-block;text-decoration:none;font-weight:800;font-size:15px;border-radius:999px;padding:13px 26px;text-align:center;border:3px solid var(--night);cursor:pointer;color:#fff!important;box-shadow:0 4px 0 var(--night);transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translateY(2px);box-shadow:0 2px 0 var(--night)}
+.btn-green{background:var(--green-d)}.btn-grad{background:var(--purple)}.btn-sm{padding:8px 20px;font-size:14px}
+.btn-yellow{background:var(--yellow);color:var(--night)!important}
+.btn-white{background:#fff;color:var(--night)!important}
+.btn-ghost{background:transparent;border-color:#fff;box-shadow:0 4px 0 rgba(255,255,255,.35)}
+.btns{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px}
+.ph{background:repeating-linear-gradient(45deg,#f6ecff,#f6ecff 14px,#efe0fb 14px,#efe0fb 28px);display:flex;align-items:center;justify-content:center;aspect-ratio:4/3;color:var(--purple);font-weight:800;font-size:14px;text-align:center;padding:12px}
+.content p{margin:0 0 1em}.link,.link-i{color:var(--purple);font-weight:800}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:2px}

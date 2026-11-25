@@ -1,0 +1,7 @@
+/* Cores globais, tiradas do logo oficial. Troque aqui e o site inteiro muda. */
+:root{
+  --purple:#8502b3; --violet:#a314e7; --night:#3a0552; --night2:#5a0a7c;
+  --blue:#0077e2; --red:#ee0922; --yellow:#ffc200; --green:#12b81f; --green-d:#0b7d14;
+  --ink:#2b1238; --mute:#68587a; --line:#e6d6f2; --cream:#fff9ec; --foot:#2a0a3a;
+  --radius:28px; --font-h:'Fredoka',system-ui,sans-serif; --font-b:'Nunito',system-ui,sans-serif;
+}
